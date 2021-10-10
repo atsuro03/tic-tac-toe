@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>group-d</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!-- target -->
+    <div id="target">
+      <div class="bg-info bg-gradient pb-5">
+      <!-- ▼TitleとPlayer1とPlayer2/AIをまとめました。▼ -->
+      <div class="py-4">
+        <h1 class="d-flex justify-content-center py-3">Tic-tac-toe</h1>
+        <!-- ▼Player1とPlayer2のボタンです。▼ -->
+        <div class="d-flex justify-content-around player">
+          <button type="button" class="btn btn-warning rounded-pill" disabled>
+            Player1
+          </button>
+          <button type="button" class="btn btn-light rounded-pill" disabled>
+            Player2/AI?
+          </button>
+        </div>
+        <!-- ▲Player1とPlayer2のボタンです。▲ -->
+      </div>
+
+      <!-- Player1、Player2から下の要素を囲ってます -->
+      <div class="container">
+        <div class="d-flex justify-content-around">
+          <!-- 勝敗とPlayer1, Player2 -->
+          <div id="winAndLose" class="col-3">
+            <!-- <h4 class="text-center">勝敗</h4> -->
+
+            <!-- <div class="d-flex justify-content-around"> -->
+              <!-- player1 -->
+              <!-- <div class="">
+                <p>Player1</p>
+                <p>1 win</p>
+                <p>2 win</p>
+                <p>3 lose</p>
+              </div> -->
+
+              <!-- player2 -->
+              <!-- <div class="">
+                <p>Player2</p>
+                <p>lose</p>
+                <p>lose</p>
+                <p>win</p>
+              </div> -->
+            <!-- </div> -->
+          </div>    
+
+          <div class="mainTable col-6 bg-light my-3">
+            <div class="d-flex justify-content-center row-2">
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="1-1"></div>
+              </div>
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="1-2"></div>
+              </div>
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="1-3"></div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center row-2">
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="2-1"></div>
+              </div>
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="2-2"></div>
+              </div>
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="2-3"></div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center row-2">
+              <div class="square col-md col-3">
+                <div class="border square-in" id="3-1"></div>
+              </div>
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="3-2"></div>
+              </div>
+              <div class="square col-md-4 col-3">
+                <div class="border square-in" id="3-3"></div>
+              </div>
+            </div>
+            
+          <!-- </div> -->
+
+          <!-- Logの列 -->
+          <!-- <div class="col-3">
+            <h4 class="d-flex justify-content-center">Log</h4> -->
+
+          <!-- Logより下の要素 -->
+          <!-- <div class="row justify-content-around">
+              <h6 class="px-3">1</h6>
+
+              <div class="row bg-white">
+                <div class="log_square bg-white"></div>
+                <div></div>
+              </div>
+            </div> -->
+          <!-- </div> -->
+          <!-- Logの列閉じタグ -->
+          <!-- </div> -->
+        </div>
+        <!-- Player1、Player2の下の要素を囲っている閉じタグ -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
